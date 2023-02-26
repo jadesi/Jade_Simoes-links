@@ -8,7 +8,7 @@
   --text-color: white;
   --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.2);
-  --surface-color: rgba(255, 255, 255, 0.1); 
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --social-icons-hover: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon.svg);
@@ -18,7 +18,7 @@
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05); 
+  --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --social-icons-hover: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
@@ -31,7 +31,8 @@ body {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -77,10 +78,9 @@ body {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
-
 }
 
 #switch span {
@@ -130,7 +130,7 @@ ul li a:hover {
   justify-content: center;
 }
 
-#social-links a{
+#social-links a {
   text-decoration: none;
   color: var(--text-color);
   display: flex;
@@ -146,7 +146,7 @@ ul li a:hover {
   background: var(--social-icons-hover);
 }
 
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
